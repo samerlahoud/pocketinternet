@@ -34,7 +34,7 @@ b89f6867329c        samerlahoud/bird:0.2          "bash -c 'sysctl net…"   2 h
 ```
 
 You can SSH directly into the client container (10.17.1.101) [user = root, password = pocket]. 
-To run commands in the other containers you can start a shell using `docker run -it image_name /bin/bash`.
+To run commands in the other containers you can start a shell using ``docker exec -it demo1_nginx16_2_1 /bin/bash``.
 
 ## Cleanup
 
