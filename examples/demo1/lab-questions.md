@@ -65,3 +65,9 @@ Removing network demo1_lan_net_16_2
 ```
 
 ## Routing Tables
+
+Show the contents of the routing tables on all devices.
+- `ip route` and `ip -6 route` for hosts.
+- `birdc show route` and `birdc6 show route` for routers.
+
+Analyze the results.
