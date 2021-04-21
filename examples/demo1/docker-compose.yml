@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   client17_1:
-    image: pocketinternet/client:0.2
+    image: samerlahoud/client:0.2
     cap_add:
     - ALL
     links:
