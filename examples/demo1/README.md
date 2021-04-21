@@ -73,7 +73,7 @@ a441f7feae41        pocketinternet/http-static:0.2   "bash -c 'ip route..."   5 
 28d282be9cf3        pocketinternet/bird:0.2          "bash -c 'sysctl n..."   5 minutes ago       Up 5 minutes        179/tcp             demo1_bird16_1_1
 ```
 
-You can SSH directly into the client container (10.17.1.101) [user = root, password = pocket]. To run commands in the other containers you can start a shell using `docker run -it image_name /bin/bash`.
+You can SSH directly into the client container (10.17.1.101) [user = root, password = pocket]. To run commands in the other containers you can start a shell using `docker exec -it demo1_nginx16_2_1 /bin/bash`.
 
 To get an overall glimpse of the state of the lab you can execute the provided testing script with `sh testing.sh`.
 
