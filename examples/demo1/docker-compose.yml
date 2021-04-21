@@ -13,7 +13,7 @@ services:
         ipv6_address: fd00:17:1::101
 
   bird17_1:
-    image: pocketinternet/bird:0.2
+    image: samerlahoud/bird:0.2
     volumes:
     - ./bird17_1:/etc/bird
     cap_add:
@@ -30,7 +30,7 @@ services:
         ipv4_address: 172.17.1.1
         ipv6_address: fd00:bb::17:1:1
   bird16_1:
-    image: pocketinternet/bird:0.2
+    image: samerlahoud/bird:0.2
     volumes:
     - ./bird16_1:/etc/bird
     cap_add:
@@ -45,7 +45,7 @@ services:
         ipv4_address: 10.16.1.11
         ipv6_address: fd00:16:1::11
   bind16_1:
-    image: pocketinternet/demo-dns:0.2
+    image: samerlahoud/demo-dns:0.2
     cap_add:
     - ALL
     links:
@@ -56,7 +56,7 @@ services:
         ipv4_address: 10.16.1.101
         ipv6_address: fd00:16:1::101
   bird16_2:
-    image: pocketinternet/bird:0.2
+    image: samerlahoud/bird:0.2
     volumes:
     - ./bird16_2:/etc/bird
     cap_add:
@@ -71,7 +71,7 @@ services:
         ipv4_address: 10.16.2.11
         ipv6_address: fd00:16:2::11
   nginx16_2:
-    image: pocketinternet/http-static:0.2
+    image: samerlahoud/http-static:0.2
     volumes:
     - ./web:/var/www/html
     links:
@@ -85,7 +85,7 @@ services:
         ipv4_address: 10.16.2.101
         ipv6_address: fd00:16:2::101
   client16_2:
-    image: pocketinternet/client:0.2
+    image: samerlahoud/client:0.2
     cap_add:
     - ALL
     links:

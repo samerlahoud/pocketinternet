@@ -1,4 +1,4 @@
-FROM pocketinternet/base:0.5
+FROM samerlahoud/base:0.2
 LABEL Description="Pocket Internet BIRD image" Version="0.2" Maintainer="Pocket Internet Team"
 
 RUN apt-get update
