@@ -66,26 +66,26 @@ Removing network demo1_lan_net_16_2
 
 ## Addresssing
 
-Show the IP addresses on the host in POD-17.1 using the command `ip addr show`.
-Analyze the results and specify the type of IPv6 addresses.
+- Show the IP addresses on the host in POD-17.1 using the command `ip addr show`.
+- Analyze the results and specify the type of IPv6 addresses.
 
 ## Routing Tables
 
-Show the contents of the routing tables on all devices.
-- `ip route` and `ip -6 route` for hosts.
-- `birdc show route` and `birdc6 show route` for routers.
-
-Analyze the results.
+- Show the contents of the routing tables on all devices.
+  - `ip route` and `ip -6 route` for hosts.
+  - `birdc show route` and `birdc6 show route` for routers.
+- Analyze the results.
 
 ## Connectivity
 
-Test the connectivity between devices using ping and traceroute tools with IPv4 and IPv6 addresses. Analyze the results.
+- Test the connectivity between devices using ping and traceroute tools with IPv4 and IPv6 addresses. 
+- Analyze the results.
 
 ## DNS
 
-Analyze the contents of the /etc/bind/dbp* files.
-Connect to the host in POD-17.1, and configure the DNS server in /etc/resolv.conf.
-Use `dig` or `host` commands to send DNS requests. Analyze the results.
+- Analyze the contents of the /etc/bind/dbp* files.
+- Connect to the host in POD-17.1, and configure the DNS server in /etc/resolv.conf.
+- Use `dig` or `host` commands to send DNS requests. Analyze the results.
 
 
 ## Curl
