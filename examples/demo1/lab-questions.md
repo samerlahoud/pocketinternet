@@ -79,8 +79,13 @@ Analyze the results.
 
 ## Connectivity
 
-Test the connectivity between devices using ping and traceroute tools with IPv4 and IPv6 addresses. 
+Test the connectivity between devices using ping and traceroute tools with IPv4 and IPv6 addresses. Analyze the results.
 
 ## DNS
+
+Analyze the contents of the /etc/bind/dbp* files.
+Connect to the host in POD-17.1, and configure the DNS server in /etc/resolv.conf.
+Use `dig` or `host` commands to send DNS requests. Analyze the results.
+
 
 ## Curl
