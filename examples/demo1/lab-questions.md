@@ -38,7 +38,7 @@ To run commands in the other containers you can start a shell using ``docker exe
 
 ## Cleanup
 
-To stop the lab, press `Ctrl+C` in the `docker-compose` window and, once it's done, run `docker-compose down` to remove all containers, networks etc.
+If you want to stop the lab, press `Ctrl+C` in the `docker-compose` window and, once it's done, run `docker-compose down` to remove all containers, networks etc.
 
 ```
 Gracefully stopping... (press Ctrl+C again to force)
