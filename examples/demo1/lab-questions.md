@@ -84,15 +84,15 @@ Removing network demo1_lan_net_16_2
 ## DNS
 
 - Analyze the contents of the `/etc/bind/dbp*` files.
-- Connect to the host in POD-17.1, and configure the DNS server in /etc/resolv.conf.
+- Connect to the host in POD-17.1, and configure the DNS server in `/etc/resolv.conf`.
 - Use `dig` or `host` commands to send DNS requests. Analyze the results.
 - Put the IPv6 address of the DNS server in the `/etc/resolv.conf` file. What is the impact of this configuration? (you can use tcpdump port 53 on the DNS server to capture DNS packets).
 
 ## Web
-- Modify `/etc/nginx/sites-enabled/default` on the web server in order to have two different pages loaded when accessing it using IPv4 or IPv6:
+- Modify `/etc/nginx/sites-enabled/default` on the web server in order to have two different pages loaded when accessing the server using IPv4 or IPv6:
   -  Use `listen 80;` and `listen [::]:80;` in order to handle IPv4 or IPv6 requests.
   -  Use `index.html` and `index6.html` as landing pages respectively.
-  -  Relaod the nginx server with `/etc/init.d/nginx reload`
+  -  Relaod the nginx server with the new configuration using `/etc/init.d/nginx reload`.
 
 - Test from the host in POD-17.1 the access to the web server using the curl command:
   - Use `curl -4 s1.p16002.lab` and `curl -6 s1.p16002.lab`.
