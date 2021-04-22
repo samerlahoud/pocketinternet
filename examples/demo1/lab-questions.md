@@ -74,6 +74,7 @@ Removing network demo1_lan_net_16_2
 - Show the contents of the routing tables on all devices.
   - `ip route` and `ip -6 route` for hosts.
   - `birdc show route` and `birdc6 show route` for routers.
+  - Check the BGP sessions on routers using `birdc show protocols all as_asn`
 - Analyze the results.
 
 ## Connectivity
