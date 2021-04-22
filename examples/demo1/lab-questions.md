@@ -64,7 +64,7 @@ Removing network demo1_lan_net_16_2
 
 ```
 
-## Addresssing
+## Addressing
 
 - Show the IP addresses on the host in POD-17.1 using the command `ip addr show`.
 - Analyze the results and specify the type of IPv6 addresses.
