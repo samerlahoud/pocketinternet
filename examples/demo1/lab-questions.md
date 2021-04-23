@@ -79,12 +79,12 @@ Removing network demo1_lan_net_16_2
 
 ## Connectivity
 
-- Test the connectivity between devices using ping and traceroute tools with IPv4 and IPv6 addresses. 
+- Test the connectivity between hosts using ping and traceroute tools with IPv4 and IPv6 addresses. 
 - Analyze the results.
 
 ## DNS
 
-- Analyze the contents of the `/etc/bind/dbp*` files.
+- Analyze the contents of the `/etc/bind/dbp*` files on the DNS server.
 - Connect to the host in POD-17.1, and configure the DNS server in `/etc/resolv.conf`.
 - Use `dig` or `host` commands to send DNS requests. Analyze the results.
 - Put the IPv6 address of the DNS server in the `/etc/resolv.conf` file. What is the impact of this configuration? (you can use tcpdump port 53 on the DNS server to capture DNS packets).
